@@ -14,9 +14,9 @@ export default function Navbar() {
 
     return (
         <nav
-            className="hidden xl:block bg-gradient-radial-bottom bg-no-repeat bg-[left_top_0rem] from-[#566fcc]/25 via-[#010203]/10 to-[#010203]">
+            className="hidden relative xl:block z-50 bg-gradient-radial-bottom bg-no-repeat bg-[left_top_0rem] from-[#566fcc]/25 via-[#010203]/100 to-[#010203]">
             <div className="px-[20px] flex justify-between bg-transparent text-white">
-                <div className="px-5 xl:px-12 py-6 flex w-full">
+                <div className="px-5 xl:px-40 py-6 flex w-full">
                     <div className="hidden xl:flex items-center space-x-5">
                         <a className="flex hover:text-gray-200" href="#">
                             <Image width={25} height={25} alt="lol" src="assets/images/tiktok.svg"

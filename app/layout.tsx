@@ -25,7 +25,7 @@ export default function RootLayout({
         <html lang="de">
         <body className={`bg-black text-white ${inter.className}`}>
 
-        <header className="bg-transparent absolute top-0 left-0 w-full">
+        <header className="bg-transparent w-full">
             <Navbar></Navbar>
             <MobileNavbar></MobileNavbar>
         </header>
@@ -33,7 +33,7 @@ export default function RootLayout({
 
         <footer>
         <div
-            className="bg-gradient-radial-top bg-no-repeat p-10 xl:p-16 pb-36 mt-44 h-footer origin-top to-[#010203]/30 via-[#566fcc]/10 via-[#566fcc]/10 from-[#566fcc]/20 border-[#303545] border-t">
+            className="bg-gradient-radial-top bg-no-repeat p-10 xl:p-16 pb-36 h-footer origin-top to-[#010203]/30 via-[#566fcc]/10 via-[#566fcc]/10 from-[#566fcc]/20 border-[#303545] border-t">
 
             <div className="grid xl:grid-cols-4 grid-cols-2 mx-auto gap-x-4 w-4/5 justify-items-center pt-10 py-38">
                 <div className="h-fit">

@@ -7,6 +7,16 @@ const nextConfig = {
                 hostname: 'cravatar.eu',
                 port: '',
             },
+            {
+                protocol: 'https',
+                hostname: 'plexus.baltic-galaxy.de',
+                port: '',
+            },
+            {
+                protocol: 'https',
+                hostname: 'cdn.discordapp.com',
+                port: '',
+            },
         ],
     },
 }
