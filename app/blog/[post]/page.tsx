@@ -40,11 +40,11 @@ export default function Home({params}: { params: { post: string } }) {
 
     return (
         <main className="bg-black mx-auto w-full">
-            <div className="xl:px-0 sm:px-5 md:px-4 my-0 mb-10">
+            <div className="xl:px-0 sm:px-5 md:px-4 my-0">
                 <div className="text-white h-[80vh]">
                     <div className="bg-gradient-blog-post-header z-10 absolute w-full h-[80vh]"></div>
                     <Image
-                        src={'https://cdn.discordapp.com/attachments' + singlePost.cover_url}
+                        src={singlePost.cover_url}
                         alt="blog_image"
                         width={1920}
                         height={1080}
@@ -72,10 +72,10 @@ export default function Home({params}: { params: { post: string } }) {
                     </div>
                 </div>
 
-                <div className="px-52 bg-gradient-blog-post-header my-10">
+                <div className="px-52 ">
 
-                    <div className="xl:mx-28 mx-6 p-2 mt-20 mb-48 text-gray-50">
-                        <div dangerouslySetInnerHTML={{__html: cleanText}}/>
+                    <div className="xl:mx-28 mx-6 p-2 pt-20 mb-48 text-white">
+                        <div className="text-white" dangerouslySetInnerHTML={{__html: cleanText}}/>
                     </div>
                 </div>
 
@@ -87,8 +87,8 @@ export default function Home({params}: { params: { post: string } }) {
                         key={index}
                         postTitle={post.title}
                         postDesc={post.description}
-                        postImgUrl={'https://cdn.discordapp.com/attachments' + post.cover_url}
-                        postSlug={'/blog/' + post.slug}
+                        postImgUrl={post.cover_url}
+                        postSlug={'/' + post.slug}
                     />
                 ))}
             </div>

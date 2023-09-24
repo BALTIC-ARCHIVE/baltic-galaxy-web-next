@@ -8,6 +8,7 @@ const inter = Inter({subsets: ['latin']})
 import './globals.css'
 import Navbar from "@/components/navbar/navbar";
 import MobileNavbar from "@/components/mobile-navbar/mobile-navbar";
+import CacheProvider from "@/provider/cache-provider";
 
 export const metadata = {
     title: 'Baltic Studios',
@@ -22,6 +23,7 @@ export default function RootLayout({
 
 
     return (
+        <CacheProvider>
         <html lang="de">
         <body className={`bg-black text-white ${inter.className}`}>
 
@@ -33,7 +35,7 @@ export default function RootLayout({
 
         <footer>
         <div
-            className="bg-gradient-radial-top bg-no-repeat p-10 xl:p-16 pb-36 h-footer origin-top to-[#010203]/30 via-[#566fcc]/10 via-[#566fcc]/10 from-[#566fcc]/20 border-[#303545] border-t">
+            className="bg-gradient-radial-top overflow-hidden bg-no-repeat p-10 xl:p-16 pb-36 h-footer origin-top to-[#010203]/30 via-[#566fcc]/10 via-[#566fcc]/10 from-[#566fcc]/20 border-[#303545] border-t">
 
             <div className="grid xl:grid-cols-4 grid-cols-2 mx-auto gap-x-4 w-4/5 justify-items-center pt-10 py-38">
                 <div className="h-fit">
@@ -135,5 +137,6 @@ export default function RootLayout({
 
     </body>
 </html>
+        </CacheProvider>
     )
 }

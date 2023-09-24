@@ -13,11 +13,12 @@ export default function BlogPostCard({postTitle, postDesc, postImgUrl, postSlug 
 
 
     return (
-        <div className=" hover:scale-105 cursor-pointer transition-all ease">
-            <div>
+        <motion.div  whileHover={{ scale: 1.05 }}
+                     whileTap={{ scale: 0.9 }} className=" hover:scale-105 cursor-pointer transition-all ease">
+            <a href={'/blog/' + postSlug}>
 
                 <div className="relative z-10 bg-blog-article-gradient">
-                    <Image alt="image" height={100} width={200} className="z-10 w-full rounded-lg" src={postImgUrl} />
+                    <Image alt="image" height={1000} width={2000} className="z-10 w-full rounded-lg" src={postImgUrl} />
                 </div>
 
                 <div className="py-5 h-52 z-50 relative">
@@ -25,9 +26,9 @@ export default function BlogPostCard({postTitle, postDesc, postImgUrl, postSlug 
                     <div className="text-white hr w-1/4"></div>
                     <p className="text-gray-400 mt-8">{postDesc}</p>
 
-                    <a href={postSlug} className="mt-4 inline-flex justify-center rounded-lg text-sm text-[17px] font-semibold  text-white uppercase hover:cursor-pointer">WEITERLESEN</a>
+                    <a href={'/blog/' + postSlug} className="mt-4 inline-flex justify-center rounded-lg text-sm text-[17px] font-semibold  text-white uppercase hover:cursor-pointer">WEITERLESEN</a>
                 </div>
-            </div>
-        </div>
+            </a>
+        </motion.div>
     )
 }

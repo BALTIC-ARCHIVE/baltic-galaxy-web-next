@@ -58,7 +58,7 @@ export default function Navbar() {
                                    aria-current="page">STARTSEITE</a>
 
                                 <a href="#"
-                                   className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">ENTDECKEN</a>
+                                   className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">ENTDECKEN <span className="px-[6px] py-[3px] h-1 bg-red-600 font-bold text-[10px] rounded">NEU</span></a>
 
                                 <a className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">BLOG</a>
 
@@ -73,7 +73,7 @@ export default function Navbar() {
 
                                 <a href="#"
                                    className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">
-                                    MEDIATHEK <span className="px-[6px] py-[3px] h-1 bg-red-600 font-bold text-[10px] rounded">NEU</span>
+                                    MEDIATHEK
                                 </a>
                             </div>
                         </div>

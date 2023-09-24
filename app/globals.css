@@ -193,6 +193,14 @@ body {
 
 }
 
+.text-gradient-blue {
+  background: linear-gradient(90.14deg, #6176C2 0.12%, #C2D0FF 100.06%)!important;
+  -webkit-background-clip: text!important;
+  -webkit-text-fill-color: transparent!important;
+  background-clip: text!important;
+  text-fill-color: transparent!important;
+
+}
 
 .list-checkmark {
   list-style: disc url("../public/assets/images/icons/check.png") inside;

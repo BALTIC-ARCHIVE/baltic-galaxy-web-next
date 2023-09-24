@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/baltic-galaxy-next.iml" filepath="$PROJECT_DIR$/.idea/baltic-galaxy-next.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../baltic-studios-web-next/.idea/baltic-studios-next.iml" filepath="$PROJECT_DIR$/../baltic-studios-web-next/.idea/baltic-studios-next.iml" />
     </modules>
   </component>
 </project>
