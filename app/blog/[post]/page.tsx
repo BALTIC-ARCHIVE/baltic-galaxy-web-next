@@ -16,6 +16,18 @@ export default function Home({params}: { params: { post: string } }) {
     const router = useRouter()
     let cleanText: any;
 
+    function timeConverter(UNIX_timestamp: any){
+        var a = new Date(UNIX_timestamp);
+        var months = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+        var year = a.getFullYear();
+        var month = months[a.getMonth()];
+        var date = a.getDate();
+        var hour = a.getHours();
+        var min = a.getMinutes();
+        var time = date + '. ' + month + ' ' + year + ', ' + hour + ':' + min + ' Uhr';
+        return time;
+    }
+
     useEffect(() => {
         setLoading(true);
         fetch('https://plexus.baltic-galaxy.de/api/articles')
@@ -39,28 +51,26 @@ export default function Home({params}: { params: { post: string } }) {
     if (isLoading) return <p>Loading...</p>
 
     return (
-        <main className="bg-black mx-auto w-full">
-            <div className="xl:px-0 sm:px-5 md:px-4 my-0">
-                <div className="text-white h-[80vh]">
-                    <div className="bg-gradient-blog-post-header z-10 absolute w-full h-[80vh]"></div>
+        <main className="bg-black mx-auto w-full overflow-x-hidden">
+            <div className="xl:px-0 my-0">
+                <div className="text-white lg:h-[80vh] relative h-[40vh]">
+                    <div className="bg-gradient-blog-post-header z-10 absolute w-full lg:h-[80vh] h-[40vh]"></div>
                     <Image
                         src={singlePost.cover_url}
                         alt="blog_image"
                         width={1920}
                         height={1080}
-                        className="h-[80vh] w-full"
+                        className="lg:h-[80vh] h-[40vh] w-full"
                     />
-                    <div className="z-20">
-                        <h3 className="text-gray-400 uppercase z-20 text-[18px] absolute bottom-40 px-20">Ab anfang
-                            2024!</h3>
-                        <h1 className="text-5xl font-bold mb-4 z-20 leading-normal absolute bottom-20 px-20">{singlePost.title}</h1>
+                    <div className="z-20 px-4">
+                        <h1 className="xl:text-5xl text-3xl font-bold mb-4 z-20 leading-normal absolute bottom-20 left-0 xl:px-20 px-4">{singlePost.title}</h1>
                         <div className="xl:px-20 h-20 z-20 w-full absolute bottom-0">
                             <div className="xl:float-right float-left mb-4">
-                                <span className="text-gray-600">Sonntag, den 22. Januar 2023</span>
+                                <span className="text-gray-600">{timeConverter(Date.parse(singlePost.created_at))}</span>
                             </div>
                             <div className="w-72 float-left">
                                 <Image height={250} width={250} alt="avatr"
-                                       className="h-16 xl:h-20 xl:w-20 rounded-[10px] float-left mr-2"
+                                       className="h-16 w-16 lg:h-20 xl:w-20 rounded-[10px] float-left mr-2"
                                        src="https://cravatar.eu/helmavatar/dieserjohn/250.png"/>
                                 <div className="float-left ml-2">
                                     <h1 className="text-white xl:mt-4">John</h1>
@@ -72,16 +82,16 @@ export default function Home({params}: { params: { post: string } }) {
                     </div>
                 </div>
 
-                <div className="px-52 ">
+                <div className="px-2 lg:px-52 ">
 
-                    <div className="xl:mx-28 mx-6 p-2 pt-20 mb-48 text-white">
-                        <div className="text-white" dangerouslySetInnerHTML={{__html: cleanText}}/>
+                    <div className="xl:mx-28 p-2 pt-20 mb-48 text-white">
+                        <div className="text-white text-xl lg:text-2xl"  dangerouslySetInnerHTML={{__html: cleanText}}/>
                     </div>
                 </div>
 
             </div>
 
-            <div className="mt-5 py-20 px-40 grid grid-cols-3 gap-4">
+            <div className="mt-5 py-20 px-4 lg:px-40 grid lg:grid-cols-3 grid-cols-1 gap-4">
                 {allPosts.slice(0,3).map((post: any, index: any) => (
                     <BlogPostCard
                         key={index}

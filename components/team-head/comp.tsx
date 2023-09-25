@@ -14,7 +14,7 @@ export default function TeamHead({username, rank, bio, twitter}: any) {
         <div className="inline">
             <Image
                 height={64} width={64} alt="alt"
-                className="inline transition-all ease-in-out mx-2 rounded h-12 w-12"
+                className="inline transition-all ease-in-out mx-2 rounded w-7 h-7 lg:h-12 lg:w-12"
                 src={getImageUrl(username)}/>
         </div>
     );

@@ -87,34 +87,34 @@ export default function Home() {
     }
 
     return (
-        <main className="flex justify-center min-h-screen bg-black flex-col items-center justify-between">
-            <div className=" h-[70vh] bg-cover bg-no-repeat relative bg-bg-hoth bg-bottom border-r border-white w-full">
-                <div className="absolute bottom-48 mx-48">
-                    <div className="w-4/6">
+        <main className="flex justify-center min-h-screen overflow-x-hidden flex-col items-center justify-between">
+            <div className=" lg:h-[70vh] h-[60vh] bg-cover bg-no-repeat relative bg-bg-hoth bg-bottom border-r border-white w-full ">
+                <div className="absolute lg:bottom-48 bottom-16 mx-4 lg:mx-48">
+                    <div className="lg:w-4/6 w-6/6 px-4">
             <span
-                className="px-[20px] py-[7px] h-1 text-bal-yellow-darker bg-black/10 font-bold border border-white/20 text-[14px] rounded-full group hover:cursor-pointer">Wir suchen Verstärkung - Jetzt bewerben
+                className="xl:px-[20px] px-2 py-[7px] h-1 text-bal-yellow-darker bg-black/10 font-bold border border-white/20 lg:text-[14px] text-[12px] rounded-full group hover:cursor-pointer">Wir suchen Verstärkung - Jetzt bewerben
                 <Image
                 height={20} width={20} alt="alt"
                 className="inline transition-all ease-in-out group-hover:ml-3 ml-2 h-4 w-4"
                 src="/assets/images/icons/arrow_right_yellow.svg"/></span>
-                        <h1 className=" mt-5 text-[52px] font-medium">TAUCHE EIN IN EIN STAR WARS ABENTEUER</h1>
+                        <h1 className=" mt-5 lg:text-[52px] text-[25px] font-medium">TAUCHE EIN IN EIN STAR WARS ABENTEUER</h1>
                         <div className="hr w-2/4"></div>
                         <p className="mt-10 mb-10 text-[18px] text-white">
                             Trete dem Imperium oder der Neuen Republik bei und kämpfe in Schlachten um ganze Flotten in
                             vorderster Front! </p>
 
                         <a
-                            className="px-8 py-4 rounded-md bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium mr-5"
+                            className="lg:px-8 lg:py-4 px-4 py-2 rounded-md bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium mr-5"
                             href="/about-us">DISCORD BEITRETEN</a>
                         <a
-                            className="px-8 py-4 rounded-md bg-black text-white/80 border-2  hover:bg-black/70 border-[#7E89B1]/70 text-sm font-medium mr-5"
+                            className="lg:px-8 lg:py-4 px-4 py-2 hidden lg:inline rounded-md bg-black text-white/80 border-2  hover:bg-black/70 border-[#7E89B1]/70 text-sm font-medium mr-5"
                             href="/about-us">SERVERADRESSE KOPIEREN</a>
                     </div>
                 </div>
             </div>
 
-            <div className="xl:w-3/4 w-4/4 bg-black pb-16 mt-8 grid  gap-x-22 grid-cols-2">
-                <div className="my-auto w-4/6">
+            <div className="xl:w-3/4 w-full bg-black px-8 pb-16 mt-8 grid  lg:gap-x-22 lg:grid-cols-2 grid-cols-1">
+                <div className="my-auto lg:w-4/6 w-full">
                     <h1 className="text-[32px] font-medium">WAS IST BALTIC GALAXY?</h1>
                     <div className="hr w-1/2"></div>
                     <p className="mt-8 mb-8 text-[18px] text-white">Lorem ipsum dolor sit amet consectetur adipiscing
@@ -129,12 +129,12 @@ export default function Home() {
                         className="px-8 py-4 rounded-md bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium mr-5"
                         href="/about-us">ENTDECKEN</a>
                 </div>
-                <div className=" bg-bg-kessel2 bg-center bg-200% bg-no-repeat rounded-xl w-full h-[800px]">
+                <div className=" bg-bg-kessel2 bg-center bg-200% bg-no-repeat rounded-xl mt-10 lg:mt-0 w-full h-[400px] lg:h-[800px]">
                 </div>
             </div>
 
 
-            <div className="xl:w-3/4 w-4/4 bg-black pb-16 mt-8 grid  gap-x-12 grid-cols-2">
+            <div className="xl:w-3/4 w-full bg-black pb-16 mt-8 px-8 grid  gap-x-12 lg:grid-cols-2 grid-cols-1">
                 <div className="my-auto float-left">
                     <Image
                         height={2000} width={2000} alt="alt"
@@ -155,12 +155,12 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="xl:w-3/4 w-4/4 mt-8">
-                <h1 className="text-[32px] mb-4 font-medium">WAS IST BALTIC GALAXY?</h1>
-                <div className="hr w-1/12"></div>
-                <div className="py-16 grid grid-cols-3 gap-4">
-                    {articles && articles.slice(0, 3).map((post: any, index: any) => (
-                        <BlogPostCard key={index}
+            <div className="xl:w-3/4 w-full px-8 mt-8">
+                <h1 className="text-[32px] mb-4 font-medium">Immer auf dem aktuellsten Stand bleiben</h1>
+                <div className="hr w-2/12"></div>
+                <div className="py-16 grid lg:grid-cols-3 grid-cols-1 gap-4">
+                    {articles && articles.slice(0, 3).map((post: any, index4: any) => (
+                        <BlogPostCard key={index4}
                             postTitle={post.title}
                             postDesc={post.short_text}
                             postImgUrl={post.cover_url}
@@ -204,7 +204,7 @@ export default function Home() {
                 <p className="text-[15px] xl:text-[18px] mt-4 font-normal text-gray-400 text-center">Woher stammst du? Was führt dich hierher? Wie ist überhaupt dein Name?! Ob Anführer einer neuen Revolution oder einfacher Kopfgeldjäger - bestimme selbst, wo deine Reise hin gehen soll!
                 </p>
 
-                <div className="flex mt-8 relative z-50 mx-auto xl:w-3/4 w-5/6">
+                <div className="flex mt-8 relative z-50 mx-auto xl:w-3/4 w-full">
                     {team && team.map((member: any, index: any) => (
                         <TeamHead  key={index} username={member.username} rank={member.rank_name} bio={member.bio} twitter={member.twitter_handle} />
                     ))}
@@ -213,10 +213,10 @@ export default function Home() {
                 <div className="flex mt-8 relative z-50 mx-auto xl:w-2/4 w-5/6">
                     <div className=" mx-auto grid grid-cols-2 gap-x-2">
                     <a href="/apply"
-                       className="text-black px-8 py-3 uppercase rounded-md mx-auto my-auto bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium">Offene
+                       className="text-black lg:px-8 lg:py-4 px-4 py-2 uppercase rounded-md mx-auto my-auto bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium">Offene
                         Positionen</a>
                     <a href="/apply"
-                       className=" px-8 py-3 rounded-md bg-black text-white/80 border-2 mx-auto my-auto hover:bg-white/5 border-[#7E89B1]/70 text-sm font-medium">TEAM KENNENLERNEN</a>
+                       className=" lg:px-8 lg:py-4 px-4 py-2 rounded-md bg-black text-white/80 border-2 mx-auto my-auto hover:bg-white/5 border-[#7E89B1]/70 text-sm font-medium">TEAM KENNENLERNEN</a>
                     </div>
                     </div>
             </div>

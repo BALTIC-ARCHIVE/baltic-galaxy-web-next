@@ -25,7 +25,7 @@ export default function RootLayout({
     return (
         <CacheProvider>
         <html lang="de">
-        <body className={`bg-black text-white ${inter.className}`}>
+        <body className={`bg-black overflow-x-hidden w-[100vw] text-white ${inter.className}`}>
 
         <header className="bg-transparent w-full">
             <Navbar></Navbar>
@@ -112,18 +112,18 @@ export default function RootLayout({
                         <div>
                             <ul className="mt-2 list-disc">
                                 <li className="inline mx-5">
-                                    <a href="/" className="hover:text-gray-400 text-gray-500 hover:cursor-pointer">
+                                    <a href="https://baltic-studios.de/datenschutz" className="hover:text-gray-400 text-gray-500 hover:cursor-pointer">
                                         Datenschutz
                                     </a>
                                 </li>
                                 <li className="inline mx-5">
-                                    <a href="/" className="hover:text-gray-400 text-gray-500 hover:cursor-pointer">
+                                    <a href="https://baltic-studios.de/impressum" className="hover:text-gray-400 text-gray-500 hover:cursor-pointer">
                                         Impressum
                                     </a>
                                 </li>
                                 <li className="inline mx-5">
-                                    <a href="/" className="hover:text-gray-400 text-gray-500 hover:cursor-pointer">
-                                        Nutzungsbedingungen
+                                    <a href="https://baltic-studios.de/credits" className="hover:text-gray-400 text-gray-500 hover:cursor-pointer">
+                                        Credits
                                     </a>
                                 </li>
                             </ul>

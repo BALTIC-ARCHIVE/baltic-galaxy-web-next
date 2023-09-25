@@ -11,7 +11,7 @@ export default function AudioListGroup() {
 
 
 
-    const audioList = useFetch({
+/*    const audioList = useFetch({
         url: "https://plexus.baltic-galaxy.de/api/tracks",
         method: "get",
         key: [],
@@ -26,17 +26,48 @@ export default function AudioListGroup() {
             setTracks(audioList.data);
         }
 
-    }, [audioList])
+    }, [audioList])*/
 
 
     // @ts-ignore
     return (
         <div className="h-fit rounded-2xl">
             <ul>
-                {tracks && tracks.map((track: any, index2: any) => (
+{/*                {tracks && tracks.map((track: any, index2: any) => (
                     <AudioListItem key={index2} title={track.title} author={track.author} duration="2:30"
                                    audioUrl={track.audioUrl}/>
-                ))}
+                ))}*/}
+
+                <AudioListItem
+                    title={'Adventure Awaits'}
+                    author={'Alexander Rose'}
+                    duration={'2:30'}
+                    audioUrl={'https://plexus.baltic-galaxy.de/assets/audio/adventure_awaits.mp3'}
+                />
+                <AudioListItem
+                    title={'Into the Deep'}
+                    author={'Alexander Rose'}
+                    duration={'2:30'}
+                    audioUrl={'https://plexus.baltic-galaxy.de/assets/audio/adventure_awaits.mp3'}
+                />
+                <AudioListItem
+                    title={'Confrontation on Ash'}
+                    author={'Alexander Rose'}
+                    duration={'2:30'}
+                    audioUrl={'https://plexus.baltic-galaxy.de/assets/audio/adventure_awaits.mp3'}
+                />
+                <AudioListItem
+                    title={'Inspect the Ruins'}
+                    author={'Alexander Rose'}
+                    duration={'2:30'}
+                    audioUrl={'https://plexus.baltic-galaxy.de/assets/audio/adventure_awaits.mp3'}
+                />
+                <AudioListItem
+                    title={'Glowing Darkness'}
+                    author={'Alexander Rose'}
+                    duration={'2:30'}
+                    audioUrl={'https://plexus.baltic-galaxy.de/assets/audio/adventure_awaits.mp3'}
+                />
 
             </ul>
 

@@ -45,11 +45,11 @@ export default function BlogPage() {
     }
 
     return (
-        <main className="flex justify-center min-h-screen flex-col items-center justify-between">
-            <div className="px-20 ">
-                <div className={"h-[80vh] w-[100vw] relative  bg-no-repeat px-40 py-48"}>
-                    <div className="my-auto h-1/2 z-50 w-2/3">
-                        <h1 className="text-white text-6xl font-medium leading-tight">{singleArticle.title}</h1>
+        <main className="flex justify-center min-h-screen overflow-x-hidden flex-col items-center ">
+            <div className="lg:px-20">
+                <div className={"lg:h-[80vh] h-[40vh] relative  bg-no-repeat lg:px-40 px-4 lg:py-48 py-12"}>
+                    <div className="my-auto h-1/2 z-50">
+                        <h1 className="text-white lg:text-6xl text-4xl font-medium leading-tight">{singleArticle.title}</h1>
                         <div className="w-2/3 mt-7">
                             <p className="text-white/80 text-[20px] flex-wrap">{singleArticle.short_text}</p>
                         </div>
@@ -61,12 +61,12 @@ export default function BlogPage() {
                     </div>
                     <Image
                         height={1920} width={1080} alt="alt"
-                        className="absolute top-0 -z-50 left-0 h-[80vh] w-[100vw] "
+                        className="absolute top-0 -z-50 left-0 lg:h-[80vh] h-[40vh] w-[100vw] "
                         src={singleArticle.cover_url}/>
                 </div>
 
 
-                <div className="mt-5 py-20 px-40 z-50 grid grid-cols-3 gap-4">
+                <div className="mt-5 py-20 lg:px-40 px-8 z-50 grid lg:grid-cols-3 grid-cols-1 gap-4">
                     {articles && articles.reverse().map((post: any, index: any) => (
                         <BlogPostCard key={index}
                                       postTitle={post.title}

@@ -54,13 +54,13 @@ export default function Navbar() {
                     <div className="relative flex h-10 items-center justify-between">
                         <div className=" mx-auto sm:ml-6 sm:block">
                             <div className="flex space-x-4">
-                                <a href="#" className="text-white px-3 py-2 nav-link text-sm font-medium"
+                                <a href="/" className="text-white px-3 py-2 nav-link text-sm font-medium"
                                    aria-current="page">STARTSEITE</a>
 
-                                <a href="#"
+                                <a href="/discover"
                                    className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">ENTDECKEN <span className="px-[6px] py-[3px] h-1 bg-red-600 font-bold text-[10px] rounded">NEU</span></a>
 
-                                <a className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">BLOG</a>
+                                <a href="/blog" className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">BLOG</a>
 
                                 <a href="#"
                                    className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">FRAKTIONEN</a>
