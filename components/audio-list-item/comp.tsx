@@ -5,7 +5,7 @@ import {MouseEvent, useEffect, useState} from "react";
 import {IoPlay, IoPause} from "react-icons/io5";
 
 const useAudio = (url: any) => {
-    const [audio] = useState(new Audio(url));
+    const [audio, setAudio] = useState(new Audio(url))
     const [playing, setPlaying] = useState(false);
 
     const toggle = () => setPlaying(!playing);
@@ -17,11 +17,12 @@ const useAudio = (url: any) => {
     );
 
     useEffect(() => {
+        setAudio(new Audio(url))
         audio.addEventListener('ended', () => setPlaying(false));
         return () => {
             audio.removeEventListener('ended', () => setPlaying(false));
         };
-    }, [audio]);
+    }, []);
 
     return [playing, toggle] as const;
 };
