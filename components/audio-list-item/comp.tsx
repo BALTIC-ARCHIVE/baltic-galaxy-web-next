@@ -21,7 +21,7 @@ const useAudio = (url: any) => {
         return () => {
             audio.removeEventListener('ended', () => setPlaying(false));
         };
-    }, []);
+    }, [audio]);
 
     return [playing, toggle] as const;
 };
