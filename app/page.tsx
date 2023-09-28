@@ -105,7 +105,7 @@ export default function Home() {
 
                         <a
                             className="lg:px-8 lg:py-4 px-4 py-2 rounded-md bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium mr-5"
-                            href="/about-us">DISCORD BEITRETEN</a>
+                            href="https://discord.gg/6UKwkjgU5e">DISCORD BEITRETEN</a>
                         <a
                             className="lg:px-8 lg:py-4 px-4 py-2 hidden lg:inline rounded-md bg-black text-white/80 border-2  hover:bg-black/70 border-[#7E89B1]/70 text-sm font-medium mr-5"
                             href="/about-us">SERVERADRESSE KOPIEREN</a>
