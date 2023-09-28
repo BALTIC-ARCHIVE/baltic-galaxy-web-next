@@ -19,9 +19,11 @@ const useAudio = (url: any) => {
     useEffect(() => {
         setAudio(new Audio(url))
         // @ts-ignore
+        if (audio)
         audio.addEventListener('ended', () => setPlaying(false));
         return () => {
             // @ts-ignore
+            if (audio)
             audio.removeEventListener('ended', () => setPlaying(false));
         };
     }, []);
