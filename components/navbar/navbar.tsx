@@ -19,16 +19,16 @@ export default function Navbar() {
                 <div className="px-5 xl:px-40 py-6 flex w-full">
                     <div className="hidden xl:flex items-center space-x-5">
                         <a className="flex hover:text-gray-200" href="#">
-                            <Image width={25} height={25} alt="lol" src="assets/images/tiktok.svg"
+                            <Image width={25} height={25} alt="lol" src="/assets/images/tiktok.svg"
                                    className="h-6 w-6"/>
                         </a>
                         <a className="flex items-center hover:text-gray-200" href="#">
-                            <Image width={25} height={25} alt="lol" src="assets/images/twitter.svg"
+                            <Image width={25} height={25} alt="lol" src="/assets/images/twitter.svg"
                                    className="h-6 w-6"/>
                         </a>
 
                         <a className="flex items-center hover:text-gray-200" href="#">
-                            <Image width={25} height={25} alt="lol" src="assets/images/youtube.svg"
+                            <Image width={25} height={25} alt="lol" src="/assets/images/youtube.svg"
                                    className="h-6 w-6"/>
                         </a>
 
