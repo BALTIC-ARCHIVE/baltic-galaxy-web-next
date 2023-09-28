@@ -75,7 +75,7 @@ export default function Home({params}: { params: { post: string } }) {
                                 <div className="float-left ml-2">
                                     <h1 className="text-white xl:mt-4">John</h1>
                                     <span
-                                        className="text-white bg-[#fd3535] py-[2px] px-[5px] rounded uppercase text-sm font-semibold">{singlePost.author.rank}</span>
+                                        className="text-white bg-[#fd3535] py-[2px] px-[5px] rounded uppercase text-sm font-semibold">BALTIC STUDIOS</span>
                                 </div>
                             </div>
                         </div>
