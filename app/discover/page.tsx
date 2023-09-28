@@ -236,7 +236,7 @@ export default function Home() {
                 </h4>
                 <div className="flex justify-center mt-12 relative z-50"><a
                     className="px-8 py-4 rounded-md bg-[#5865F2] text-white/80 hover:bg-[#5865F2]/90 border-[#7E89B1] text-sm font-medium mr-5"
-                    href="/about-us">DISCORD BEITRETEN</a></div>
+                    href="https://discord.gg/6UKwkjgU5e">DISCORD BEITRETEN</a></div>
             </div>
         </main>
     )

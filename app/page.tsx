@@ -189,7 +189,7 @@ export default function Home() {
                             dir diese Meisterwerke zu präsentieren!
                         </p>
                     </div>
-                    <a className="text-bal-blue py-2 cursor-pointer group">Alle Tracks anhören <Image
+                    <a href="https://open.spotify.com/intl-de/artist/6IdCbImU2IB3E2sxaT8qNP?si=p1af8TfJROqjCPT_dR6RFQ" className="text-bal-blue py-2 cursor-pointer group">Alle Tracks anhören <Image
                         height={20} width={20} alt="alt"
                         className="inline transition-all ease-in-out group-hover:ml-3 ml-2 h-4 w-4"
                         src="/assets/images/icons/arrow_right.png"/></a>
@@ -212,10 +212,10 @@ export default function Home() {
 
                 <div className="flex mt-8 relative z-50 mx-auto xl:w-2/4 w-5/6">
                     <div className=" mx-auto grid grid-cols-2 gap-x-2">
-                    <a href="/apply"
+                    <a href="https://www.baltic-studios.de/apply"
                        className="text-black lg:px-8 lg:py-4 px-4 py-2 uppercase rounded-md mx-auto my-auto bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium">Offene
                         Positionen</a>
-                    <a href="/apply"
+                    <a href="https://www.baltic-studios.de/about-us"
                        className=" lg:px-8 lg:py-4 px-4 py-2 rounded-md bg-black text-white/80 border-2 mx-auto my-auto hover:bg-white/5 border-[#7E89B1]/70 text-sm font-medium">TEAM KENNENLERNEN</a>
                     </div>
                     </div>
