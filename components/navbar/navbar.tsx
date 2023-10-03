@@ -61,8 +61,9 @@ export default function Navbar() {
                                    className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">ENTDECKEN <span className="px-[6px] py-[3px] h-1 bg-red-600 font-bold text-[10px] rounded">NEU</span></a>
 
                                 <a href="/blog" className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">BLOG</a>
+                                <a href="https://baltic-studios.de/apply" className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">BEWERBEN</a>
 
-                                <a href="#"
+{/*                                <a href="#"
                                    className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">FRAKTIONEN</a>
 
                                 <a href="#"
@@ -74,7 +75,7 @@ export default function Navbar() {
                                 <a href="#"
                                    className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">
                                     MEDIATHEK
-                                </a>
+                                </a>*/}
                             </div>
                         </div>
                     </div>

@@ -59,7 +59,7 @@ export default function Home() {
 
                 <div className="overflow-x-hidden" id="board">
                     <div id="content">
-                        <p id="title">BALTIC Galaxy</p>
+                        <p id="title">BALTIC GALAXY</p>
                         <p id="subtitle">Das Imperium ist gefallen</p>
                         <br/>
 
@@ -232,7 +232,7 @@ export default function Home() {
                 <div className="hr-blue w-1/4 text-center mx-auto"></div>
                 <h4 className="text-[16px] xl:text-[18px] mt-12 w-2/3 mx-auto font-normal text-center">
                     Du liebst Star Wars, MMO´s oder Minecraft genau so wie wir?
-                    Dann wirst du dich wie Zuhause fühlen! Werde ein Teil unserer großartigen Communiy.
+                    Dann wirst du dich wie Zuhause fühlen! Werde ein Teil unserer großartigen Community.
                 </h4>
                 <div className="flex justify-center mt-12 relative z-50"><a
                     className="px-8 py-4 rounded-md bg-[#5865F2] text-white/80 hover:bg-[#5865F2]/90 border-[#7E89B1] text-sm font-medium mr-5"

@@ -117,14 +117,9 @@ export default function Home() {
                 <div className="my-auto lg:w-4/6 w-full">
                     <h1 className="text-[32px] font-medium">WAS IST BALTIC GALAXY?</h1>
                     <div className="hr w-1/2"></div>
-                    <p className="mt-8 mb-8 text-[18px] text-white">Lorem ipsum dolor sit amet consectetur adipiscing
-                        elit Ut et massa mi. Aliquam in hendrerit urna. <br/><br/>
+                    <p className="mt-8 mb-8 text-[18px] text-white">Wir setzen mit Minecraft neue Maßstäbe, in einer weit, weit entfernten Galaxis! <br/><br/>
 
-                        Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-                        vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit
-                        magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.
-                        Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel
-                        euismod erat placerat. In iaculis arcu eros. </p>
+                        Durchquere eine Vielzahl von spannenden Quests, erbaue deine Heimat, erobere Schlachtschiffe mit deiner Fratkion und mache dir einen Namen. Alles begleitet von talentierten Synchronsprecher/innen und hauseigenen Soundtracks! Lust auf ein unvergessliches Abenteuer? Dann los! </p>
                     <a
                         className="px-8 py-4 rounded-md bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium mr-5"
                         href="/about-us">ENTDECKEN</a>
@@ -144,11 +139,7 @@ export default function Home() {
                 <div className="my-auto ">
                     <h1 className="text-[32px] font-medium">TRAGE UNS JETZT IN DEINE SERVERLISTE EIN!</h1>
                     <div className="hr w-1/2"></div>
-                    <p className="mt-8 mb-8 text-[18px] text-white">Lorem ipsum dolor sit amet consectetur adipiscing
-                        elit Ut et massa mi.
-                        Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
-                        ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor
-                        ornare leo.</p>
+                    <p className="mt-8 mb-8 text-[18px] text-white">Tauche direkt in dein Abenteuer! Trotz unserer einzigartigen Systeme, benötigst du keine Mods. Alles weitere wird dir auf dem Server mit interaktiven Geschichten erzählt.</p>
                     <a
                         className="px-8 py-4 rounded-md bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium mr-5"
                         href="/about-us">SERVER ADRESSE KOPIEREN</a>
@@ -183,16 +174,13 @@ export default function Home() {
                     <h1 className="text-white text-4xl font-medium leading-tight">Unsere exklusiven Soundtracks</h1>
                     <div className="w-3/3 xl:w-2/3 mt-7 mb-4">
                         <p className="text-gray-400 text-[16px] flex-wrap">
-                            Wir möchten dich in eine atemberaubende Welt abtauchen lassen. Dafür braucht es mehr als
-                            eine große Leinwand.
-                            Seit Monaten arbeiten wir eng mit dem talentierten Komponisten Alexander Rose zusammen, um
-                            dir diese Meisterwerke zu präsentieren!
+                            Wir möchten dich in eine atemberaubende Welt abtauchen lassen. Dafür braucht es mehr als eine große Leinwand. Seit Monaten arbeiten wir eng mit dem talentierten Komponisten Alexander Rose zusammen, um dir unsere eigenen Soundtracks zu präsentieren! Höre dir erste Proben an.
                         </p>
                     </div>
-                    <a href="https://open.spotify.com/intl-de/artist/6IdCbImU2IB3E2sxaT8qNP?si=p1af8TfJROqjCPT_dR6RFQ" className="text-bal-blue py-2 cursor-pointer group">Alle Tracks anhören <Image
+                    <a href="https://open.spotify.com/intl-de/artist/6IdCbImU2IB3E2sxaT8qNP?si=p1af8TfJROqjCPT_dR6RFQ" className="text-bal-blue py-2 cursor-pointer group">Demnächst auf Spotify <Image
                         height={20} width={20} alt="alt"
                         className="inline transition-all ease-in-out group-hover:ml-3 ml-2 h-4 w-4"
-                        src="/assets/images/icons/arrow_right.png"/></a>
+                        src="/assets/images/icons/arrow_right_gray.svg"/></a>
                 </div>
 
                 <AudioListGroup />
