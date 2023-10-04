@@ -17,7 +17,7 @@ export default function AudioListGroup() {
         "audioUrl": "https://plexus.baltic-galaxy.de/storage/audio/adventure_awaits.wav",
         "title": "Adventure Awaits",
         "ep": "GALAXY",
-        "duration": "2:30",
+        "duration": "0:30",
         "author": "Alexander Rose"
     },
         {
@@ -27,7 +27,7 @@ export default function AudioListGroup() {
             "audioUrl": "https://plexus.baltic-galaxy.de/storage/audio/into_the_deep.wav",
             "title": "Into the Deep",
             "ep": "GALAXY",
-            "duration": "2:30",
+            "duration": "0:30",
             "author": "Alexander Rose"
         },
         {
@@ -37,7 +37,7 @@ export default function AudioListGroup() {
             "audioUrl": "https://plexus.baltic-galaxy.de/storage/audio/confrontation_on_ash.wav",
             "title": "Confrontation on Ash",
             "ep": "GALAXY",
-            "duration": "2:30",
+            "duration": "0:30",
             "author": "Alexander Rose"
         },
         {
@@ -47,7 +47,7 @@ export default function AudioListGroup() {
             "audioUrl": "https://plexus.baltic-galaxy.de/storage/audio/inspect_the_ruins.wav",
             "title": "Inspect the Ruins",
             "ep": "GALAXY",
-            "duration": "2:30",
+            "duration": "0:30",
             "author": "Alexander Rose"
         },
         {
@@ -57,7 +57,7 @@ export default function AudioListGroup() {
             "audioUrl": "https://plexus.baltic-galaxy.de/storage/audio/glowing_darkness.wav",
             "title": "Glowing Darkness",
             "ep": "GALAXY",
-            "duration": "2:30",
+            "duration": "0:30",
             "author": "Alexander Rose"
         }];
 
@@ -90,7 +90,7 @@ export default function AudioListGroup() {
                 ))}*/}
 
                 {debugTracks && debugTracks.map((track: any, index: any) => (
-                    <AudioListItem key={index} title={track.title} author={track.author} duration="2:30" audioUrl={track.audioUrl}/>
+                    <AudioListItem key={index} title={track.title} author={track.author} duration="0:30" audioUrl={track.audioUrl}/>
                 ))}
 
             </ul>

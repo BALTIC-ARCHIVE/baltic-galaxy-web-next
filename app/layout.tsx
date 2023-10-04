@@ -46,16 +46,16 @@ export default function RootLayout({
                     <div className="flex justify-between px-4 bg-transparent text-white">
                         <div className="py-6 flex">
                             <div className="hidden xl:flex items-center space-x-5">
-                                <a className="flex hover:text-gray-200" href="#">
+                                <a className="flex hover:text-gray-200" href="https://www.tiktok.com/@balticgalaxy">
                                     <Image width={25} height={25} alt="lol" src="/assets/images/tiktok.svg"
                                            className="h-6 w-6"/>
                                 </a>
-                                <a className="flex items-center hover:text-gray-200" href="#">
+                                <a className="flex items-center hover:text-gray-200" href="https://twitter.com/BalticGalaxy">
                                     <Image width={25} height={25} alt="lol" src="/assets/images/twitter.svg"
                                            className="h-6 w-6"/>
                                 </a>
 
-                                <a className="flex items-center hover:text-gray-200" href="#">
+                                <a className="flex items-center hover:text-gray-200" href="https://www.youtube.com/@balticstudios9008">
                                     <Image width={25} height={25} alt="lol" src="/assets/images/youtube.svg"
                                            className="h-6 w-6"/>
                                 </a>
@@ -68,29 +68,25 @@ export default function RootLayout({
                     <h2 className="text-gray-200 text-[16px]">BALTIC GALAXY</h2>
                     <ul className="text-gray-500 mt-3">
                         <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">Startseite</a></li>
-                        <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">Entdecken</a></li>
-                        <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">Blog</a></li>
-                        <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">Fraktionen</a></li>
-                        <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">Spieler Portal</a></li>
-                        <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">Wiki</a></li>
-                        <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">Mediathek</a></li>
+                        <li><a href="/discover" className="hover:text-gray-400 hover:cursor-pointer">Entdecken</a></li>
+                        <li><a href="/blog" className="hover:text-gray-400 hover:cursor-pointer">Blog</a></li>
                     </ul>
                 </div>
                 <div className="h-fit">
-                    <h2 className="text-gray-200 text-[16px]">WISSENSWERTES</h2>
+                    <h2 className="text-gray-200 text-[16px]">WISSENSWERTES (Demnächst)</h2>
                     <ul className="text-gray-500 mt-3">
-                        <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">Regeln</a></li>
-                        <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">Guide</a></li>
-                        <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">FAQ</a></li>
-                        <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">Branding</a></li>
+                        <li><a href="" className="hover:text-gray-400 hover:cursor-no-drop">Regeln</a></li>
+                        <li><a href="" className="hover:text-gray-400 hover:cursor-no-drop">Guide</a></li>
+                        <li><a href="" className="hover:text-gray-400 hover:cursor-no-drop">FAQ</a></li>
+                        <li><a href="" className="hover:text-gray-400 hover:cursor-no-drop">Branding</a></li>
                     </ul>
                 </div>
                 <div className="h-fit">
                     <h2 className="text-gray-200 text-[16px]">BALTIC STUDIOS</h2>
                     <ul className="text-gray-500 mt-3">
-                        <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">Über uns</a></li>
-                        <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">Team</a></li>
-                        <li><a href="/" className="hover:text-gray-400 hover:cursor-pointer">Werde Teil von uns</a></li>
+                        <li><a href="https://baltic-studios.de/about-us" className="hover:text-gray-400 hover:cursor-pointer">Über uns</a></li>
+                        <li><a href="https://baltic-studios.de/about-us" className="hover:text-gray-400 hover:cursor-pointer">Team</a></li>
+                        <li><a href="https://baltic-studios.de/apply" className="hover:text-gray-400 hover:cursor-pointer">Werde Teil von uns</a></li>
                     </ul>
                 </div>
 
@@ -102,7 +98,9 @@ export default function RootLayout({
                 <div className=" hidden lg:block py-4 px-10 mx-auto w-4/5 rounded-lg shadow bg-black">
                     <div className="grid grid-cols-3 p-5">
                         <div>
+                            <a href="/">
                             <Image width={200} height={100} alt="lol" src="/assets/logo-studios.webp"/>
+                            </a>
                         </div>
                         <div className="h-fit w-full">
                             <p className="xl:text-xl mt-1 text-[12px] text-gray-300">

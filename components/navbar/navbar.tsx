@@ -17,17 +17,17 @@ export default function Navbar() {
             className="hidden relative xl:block z-50 bg-gradient-radial-bottom bg-no-repeat bg-[left_top_0rem] from-[#566fcc]/25 via-[#010203]/100 to-[#010203]">
             <div className="px-[20px] flex justify-between bg-transparent text-white">
                 <div className="px-5 xl:px-40 py-6 flex w-full">
-                    <div className="hidden xl:flex items-center space-x-5">
-                        <a className="flex hover:text-gray-200" href="#">
+                    <div className="hidden xl:flex items-center z-50 space-x-5">
+                        <a className="flex hover:text-gray-200" href="https://www.tiktok.com/@balticgalaxy">
                             <Image width={25} height={25} alt="lol" src="/assets/images/tiktok.svg"
                                    className="h-6 w-6"/>
                         </a>
-                        <a className="flex items-center hover:text-gray-200" href="#">
+                        <a className="flex items-center hover:text-gray-200" href="https://twitter.com/BalticGalaxy">
                             <Image width={25} height={25} alt="lol" src="/assets/images/twitter.svg"
                                    className="h-6 w-6"/>
                         </a>
 
-                        <a className="flex items-center hover:text-gray-200" href="#">
+                        <a className="flex items-center hover:text-gray-200" href="https://www.youtube.com/@balticstudios9008">
                             <Image width={25} height={25} alt="lol" src="/assets/images/youtube.svg"
                                    className="h-6 w-6"/>
                         </a>

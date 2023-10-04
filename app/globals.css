@@ -411,3 +411,13 @@ p {
     top: -170%;
   }
 }
+
+.tooltip {
+  @apply invisible absolute;
+  transition: all 1s;
+}
+
+.has-tooltip .tooltip {
+  @apply visible z-50;
+  transition: all 1s;
+}

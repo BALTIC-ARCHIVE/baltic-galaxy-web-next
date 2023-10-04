@@ -12,6 +12,7 @@ import AudioListItem from "@/components/audio-list-item/comp";
 import useFetch from "@/app/hooks/useFetch";
 import TeamHead from "@/components/team-head/comp";
 import AudioListGroup from "@/components/audio-list-group/comp";
+import {wait} from "next/dist/build/output/log";
 
 
 export default function Home() {
@@ -63,6 +64,23 @@ export default function Home() {
         setInputs((values: any) => ({...values, [name]: value}))
     }
 
+    const handleClick = (event: any) => {
+        navigator.clipboard.writeText("baltic-galaxy.de").then(r => {
+            window.document.getElementById('tooltip')?.classList.add("has-tooltip");
+            setTimeout(() => {
+                window.document.getElementById('tooltip')?.classList.remove("has-tooltip");
+            }, 500);
+        });
+    }
+    const handleClick2 = (event: any) => {
+        navigator.clipboard.writeText("baltic-galaxy.de").then(r => {
+            window.document.getElementById('tooltip2')?.classList.add("has-tooltip");
+            setTimeout(() => {
+                window.document.getElementById('tooltip2')?.classList.remove("has-tooltip");
+            }, 500);
+        });
+    }
+
 
     const handleSubmit = (event: any) => {
 
@@ -91,12 +109,12 @@ export default function Home() {
             <div className=" lg:h-[70vh] h-[60vh] bg-cover bg-no-repeat relative bg-bg-hoth bg-bottom border-r border-white w-full ">
                 <div className="absolute lg:bottom-48 bottom-16 mx-4 lg:mx-48">
                     <div className="lg:w-4/6 w-6/6 px-4">
-            <span
+            <a href="https://baltic-studios.de/apply"
                 className="xl:px-[20px] px-2 py-[7px] h-1 text-bal-yellow-darker bg-black/10 font-bold border border-white/20 lg:text-[14px] text-[12px] rounded-full group hover:cursor-pointer">Wir suchen Verstärkung - Jetzt bewerben
                 <Image
                 height={20} width={20} alt="alt"
                 className="inline transition-all ease-in-out group-hover:ml-3 ml-2 h-4 w-4"
-                src="/assets/images/icons/arrow_right_yellow.svg"/></span>
+                src="/assets/images/icons/arrow_right_yellow.svg"/></a>
                         <h1 className=" mt-5 lg:text-[52px] text-[25px] font-medium">TAUCHE EIN IN EIN STAR WARS ABENTEUER</h1>
                         <div className="hr w-2/4"></div>
                         <p className="mt-10 mb-10 text-[18px] text-white">
@@ -106,9 +124,12 @@ export default function Home() {
                         <a
                             className="lg:px-8 lg:py-4 px-4 py-2 rounded-md bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium mr-5"
                             href="https://discord.gg/6UKwkjgU5e">DISCORD BEITRETEN</a>
-                        <a
-                            className="lg:px-8 lg:py-4 px-4 py-2 hidden lg:inline rounded-md bg-black text-white/80 border-2  hover:bg-black/70 border-[#7E89B1]/70 text-sm font-medium mr-5"
-                            href="/about-us">SERVERADRESSE KOPIEREN</a>
+                        <div id="tooltip" className="lg:inline hidden relative">
+                            <a onClick={handleClick}
+                               className="lg:px-8 lg:py-4 px-4 py-2 hidden lg:inline rounded-md hover:cursor-pointer bg-black text-white/80 border-2  hover:bg-black/70 border-[#7E89B1]/70 text-sm font-medium mr-5"
+                            >SERVERADRESSE KOPIEREN</a>
+                            <div className='tooltip p-1  left-16 rounded bg-black'>Adresse kopiert!</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,7 +143,7 @@ export default function Home() {
                         Durchquere eine Vielzahl von spannenden Quests, erbaue deine Heimat, erobere Schlachtschiffe mit deiner Fratkion und mache dir einen Namen. Alles begleitet von talentierten Synchronsprecher/innen und hauseigenen Soundtracks! Lust auf ein unvergessliches Abenteuer? Dann los! </p>
                     <a
                         className="px-8 py-4 rounded-md bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium mr-5"
-                        href="/about-us">ENTDECKEN</a>
+                        href="/discover">ENTDECKEN</a>
                 </div>
                 <div className=" bg-bg-kessel2 bg-center bg-200% bg-no-repeat rounded-xl mt-10 lg:mt-0 w-full h-[400px] lg:h-[800px]">
                 </div>
@@ -140,9 +161,11 @@ export default function Home() {
                     <h1 className="text-[32px] font-medium">TRAGE UNS JETZT IN DEINE SERVERLISTE EIN!</h1>
                     <div className="hr w-1/2"></div>
                     <p className="mt-8 mb-8 text-[18px] text-white">Tauche direkt in dein Abenteuer! Trotz unserer einzigartigen Systeme, benötigst du keine Mods. Alles weitere wird dir auf dem Server mit interaktiven Geschichten erzählt.</p>
-                    <a
-                        className="px-8 py-4 rounded-md bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium mr-5"
-                        href="/about-us">SERVER ADRESSE KOPIEREN</a>
+                    <div id="tooltip2" className="lg:inline hidden relative">
+                        <a onClick={handleClick2}
+                            className="px-8 py-4 rounded-md bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium mr-5">SERVER ADRESSE KOPIEREN</a>
+                        <div className='tooltip p-1  left-16 rounded bg-black'>Adresse kopiert!</div>
+                    </div>
                 </div>
             </div>
 
@@ -193,9 +216,11 @@ export default function Home() {
                 </p>
 
                 <div className="flex mt-8 relative z-50 mx-auto xl:w-3/4 w-full">
+                    <div className="mx-auto">
                     {team && team.map((member: any, index: any) => (
                         <TeamHead  key={index} username={member.username} rank={member.rank_name} bio={member.bio} twitter={member.twitter_handle} />
                     ))}
+                    </div>
                 </div>
 
                 <div className="flex mt-8 relative z-50 mx-auto xl:w-2/4 w-5/6">

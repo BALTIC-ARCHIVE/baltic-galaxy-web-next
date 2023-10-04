@@ -38,7 +38,7 @@ export default function Home() {
 
     return (
         <main className="flex justify-center min-h-screen flex-col items-center overflow-x-hidden justify-between">
-            <div id="header" className="header w-[100vw] overflow-x-hidden relative h-[100vh]">
+            <div id="header" className="header select-none w-[100vw] overflow-x-hidden relative h-[100vh]">
 
                 <section className="intro w-full lg:mt-52 mt-10 text-center">
                    Es war einmal vor langer<br/> Zeit in einer weit, weit<br/> entfernten Galaxie...
@@ -57,7 +57,7 @@ export default function Home() {
 
                 </section>
 
-                <div className="overflow-x-hidden" id="board">
+                <div className="overflow-x-hidden select-none" id="board">
                     <div id="content">
                         <p id="title">BALTIC GALAXY</p>
                         <p id="subtitle">Das Imperium ist gefallen</p>
