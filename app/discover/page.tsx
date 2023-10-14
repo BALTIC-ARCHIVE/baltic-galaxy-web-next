@@ -102,7 +102,7 @@ export default function Home() {
             </div>
 
             <div className=" h-[70vh] bg-cover bg-no-repeat relative bg-bg-kessel  border-r border-white w-full">
-                <svg className="hidden lg:block absolute right-52 -top-[5px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="hidden lg:block absolute overflow-hidden right-52 -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_763_11670)">
                         <path d="M412.935 50.2057L95.2339 50.2057L95.2339 0.305687L412.935 0.305715L412.935 50.2057Z" fill="black"/>
                         <path d="M94.853 50.2057L176.998 0.330703L12.7078 0.330688L94.853 50.2057Z" fill="black"/>
@@ -127,8 +127,8 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className=" h-[70vh] bg-cover bg-no-repeat relative bg-bg-endor bg-bottom border-r border-white w-full">
-                <svg className="hidden lg:block absolute right-52 -top-[5px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className=" h-[70vh] bg-cover relative bg-no-repeat bg-bg-endor bg-bottom border-r border-white w-full">
+                <svg className="hidden lg:block absolute overflow-hidden right-52 -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_763_11670)">
                         <path d="M412.935 50.2057L95.2339 50.2057L95.2339 0.305687L412.935 0.305715L412.935 50.2057Z" fill="black"/>
                         <path d="M94.853 50.2057L176.998 0.330703L12.7078 0.330688L94.853 50.2057Z" fill="black"/>
@@ -152,7 +152,7 @@ export default function Home() {
             </div>
 
             <div className=" h-[70vh] bg-cover bg-no-repeat relative bg-bg-umbara bg-bottom border-r border-white w-full">
-                <svg className="hidden lg:block absolute left-52 -top-[5px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="hidden lg:block absolute overflow-hidden left-52 -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_763_11670)">
                         <path d="M412.935 50.2057L95.2339 50.2057L95.2339 0.305687L412.935 0.305715L412.935 50.2057Z" fill="black"/>
                         <path d="M94.853 50.2057L176.998 0.330703L12.7078 0.330688L94.853 50.2057Z" fill="black"/>
@@ -177,7 +177,7 @@ export default function Home() {
             </div>
 
             <div className=" h-[70vh] bg-cover bg-no-repeat relative bg-bg-tatooine bg-bottom border-r border-white w-full">
-                <svg className="hidden lg:block absolute right-52 -top-[5px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="hidden lg:block absolute overflow-hidden right-52 -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_763_11670)">
                         <path d="M412.935 50.2057L95.2339 50.2057L95.2339 0.305687L412.935 0.305715L412.935 50.2057Z" fill="black"/>
                         <path d="M94.853 50.2057L176.998 0.330703L12.7078 0.330688L94.853 50.2057Z" fill="black"/>
@@ -202,7 +202,7 @@ export default function Home() {
             </div>
 
             <div className=" h-[70vh] bg-cover bg-no-repeat relative bg-bg-hoth bg-bottom border-r border-white w-full">
-                <svg className="hidden lg:block absolute left-52 -top-[5px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="hidden lg:block absolute left-52 -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_763_11670)">
                         <path d="M412.935 50.2057L95.2339 50.2057L95.2339 0.305687L412.935 0.305715L412.935 50.2057Z" fill="black"/>
                         <path d="M94.853 50.2057L176.998 0.330703L12.7078 0.330688L94.853 50.2057Z" fill="black"/>
