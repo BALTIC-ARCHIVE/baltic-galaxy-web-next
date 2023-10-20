@@ -385,7 +385,7 @@ p {
 
 #board:after {
   position: absolute;
-  content: ' ';
+  content: '';
   bottom: 60%;
   left: 0;
   right: 0;

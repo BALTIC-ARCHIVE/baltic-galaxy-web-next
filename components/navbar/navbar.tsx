@@ -1,9 +1,13 @@
 'use client';
 import {motion, useMotionTemplate, useMotionValue} from "framer-motion";
 import Image from "next/image";
-import {MouseEvent} from "react";
+import {MouseEvent, useEffect, useState} from "react";
+import {useRouter} from "next/navigation";
+import useFetch from "@/app/hooks/useFetch";
+import DiscordOnlineCount from "@/components/counts/discord-online-user";
 
 export default function Navbar() {
+
     function mobileMenu(e: any) {
         // Grab HTML Elements
         const btn = document.querySelector("button.mobile-menu-button");
@@ -15,8 +19,8 @@ export default function Navbar() {
     return (
         <nav
             className="hidden relative xl:block z-50 bg-gradient-radial-bottom bg-no-repeat bg-[left_top_0rem] from-[#566fcc]/25 via-[#010203]/100 to-[#010203]">
-            <div className="px-[20px] flex justify-between bg-transparent text-white">
-                <div className="px-5 xl:px-40 py-6 flex w-full">
+            <div className="px-[20px] flex justify-between h-20 bg-transparent text-white">
+                <div className="px-5 xl:px-40 py-6 absolute  w-full">
                     <div className="hidden xl:flex items-center z-50 space-x-5">
                         <a className="flex hover:text-gray-200" href="https://www.tiktok.com/@balticgalaxy">
                             <Image width={25} height={25} alt="lol" src="/assets/images/tiktok.svg"
@@ -33,6 +37,14 @@ export default function Navbar() {
                         </a>
 
                     </div>
+                    <div className="hidden xl:flex float-right px-3 py-4 rounded-lg border-gray-700 items-center border z-50 space-x-5">
+                        <a className="flex hover:text-gray-200" href="https://www.tiktok.com/@balticgalaxy">
+                            <Image width={30} height={30} alt="lol" src="/assets/images/icons/discord-mark-white.svg"
+                                   className="h-8 w-8"/>
+                            <span className="ml-2 mt-1"><DiscordOnlineCount /> <b>Spieler</b> online</span>
+                        </a>
+
+                    </div>
                 </div>
             </div>
             <div className="flex -mt-9 justify-between text-white">
@@ -40,7 +52,7 @@ export default function Navbar() {
                     <ul className="flex mx-auto space-x-12">
                         <Image
                             src="/assets/logo.png"
-                            alt="Vercel Logo"
+                            alt="BALTIC GALAXY LOGO"
                             width={200}
                             height={48}
                             priority
@@ -48,7 +60,6 @@ export default function Navbar() {
                     </ul>
                 </div>
             </div>
-
             <div className="flex justify-between border-[#303545] border-b">
                 <div className="mx-auto max-w-7xl">
                     <div className="relative flex h-10 items-center justify-between">

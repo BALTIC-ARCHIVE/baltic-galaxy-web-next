@@ -41,7 +41,7 @@ export default function Home() {
             <div id="header" className="header select-none w-[100vw] overflow-x-hidden relative h-[100vh]">
 
                 <section className="intro w-full lg:mt-52 mt-10 text-center">
-                   Es war einmal vor langer<br/> Zeit in einer weit, weit<br/> entfernten Galaxie...
+                   Es war einmal vor langer<br/> Zeit in einer weit, weit<br/> entfernten Galaxis...
                 </section>
 
                 <section className="logo">
@@ -58,7 +58,7 @@ export default function Home() {
                 </section>
 
                 <div className="overflow-x-hidden select-none" id="board">
-                    <div id="content">
+                    <div id="content" className="uppercase">
                         <p id="title">BALTIC GALAXY</p>
                         <p id="subtitle">Das Imperium ist gefallen</p>
                         <br/>
@@ -103,7 +103,7 @@ export default function Home() {
 
             <div className=" h-[70vh] bg-cover bg-no-repeat relative bg-bg-kessel  border-r border-white w-full">
                 <svg className="hidden lg:block absolute overflow-hidden right-52 -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_763_11670)">
+                    <g clipPath="url(#clip0_763_11670)">
                         <path d="M412.935 50.2057L95.2339 50.2057L95.2339 0.305687L412.935 0.305715L412.935 50.2057Z" fill="black"/>
                         <path d="M94.853 50.2057L176.998 0.330703L12.7078 0.330688L94.853 50.2057Z" fill="black"/>
                         <path d="M412.554 50.2057L494.699 0.330703L330.409 0.330688L412.554 50.2057Z" fill="black"/>
