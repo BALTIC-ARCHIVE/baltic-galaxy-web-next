@@ -5,6 +5,7 @@ import {MouseEvent, useEffect, useState} from "react";
 import {useRouter} from "next/navigation";
 import useFetch from "@/app/hooks/useFetch";
 import DiscordOnlineCount from "@/components/counts/discord-online-user";
+import Link from "next/link";
 
 export default function Navbar() {
 
@@ -37,14 +38,7 @@ export default function Navbar() {
                         </a>
 
                     </div>
-                    <div className="hidden xl:flex float-right px-3 py-4 rounded-lg border-gray-700 items-center border z-50 space-x-5">
-                        <a className="flex hover:text-gray-200" href="https://www.tiktok.com/@balticgalaxy">
-                            <Image width={30} height={30} alt="lol" src="/assets/images/icons/discord-mark-white.svg"
-                                   className="h-8 w-8"/>
-                            <span className="ml-2 mt-1"><DiscordOnlineCount /> <b>Spieler</b> online</span>
-                        </a>
-
-                    </div>
+                    <DiscordOnlineCount />
                 </div>
             </div>
             <div className="flex -mt-9 justify-between text-white">
@@ -65,14 +59,13 @@ export default function Navbar() {
                     <div className="relative flex h-10 items-center justify-between">
                         <div className=" mx-auto sm:ml-6 sm:block">
                             <div className="flex space-x-4">
-                                <a href="/" className="text-white px-3 py-2 nav-link text-sm font-medium"
-                                   aria-current="page">STARTSEITE</a>
+                                <Link href="/" className="text-white px-3 py-2 nav-link text-sm font-medium"
+                                   aria-current="page">STARTSEITE</Link>
+                                <Link href="/discover"
+                                   className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">ENTDECKEN <span className="px-[6px] py-[3px] h-1 bg-red-600 font-bold text-[10px] rounded">NEU</span></Link>
 
-                                <a href="/discover"
-                                   className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">ENTDECKEN <span className="px-[6px] py-[3px] h-1 bg-red-600 font-bold text-[10px] rounded">NEU</span></a>
-
-                                <a href="/blog" className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">BLOG</a>
-                                <a href="https://baltic-studios.de/apply" className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">BEWERBEN</a>
+                                <Link href="/blog" className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">BLOG</Link>
+                                <Link href="https://baltic-studios.de/apply" className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">BEWERBEN</Link>
 
 {/*                                <a href="#"
                                    className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">FRAKTIONEN</a>

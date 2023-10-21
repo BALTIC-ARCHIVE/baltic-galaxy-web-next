@@ -24,7 +24,7 @@ export default function Home() {
 
 
     const blogArticles = useFetch({
-        url: "https://plexus.baltic-galaxy.de/api/articles",
+        url: "https://plexus.baltic-galaxy.de/api/articles_3",
         method: "get",
         key: [],
         cache: {
@@ -173,7 +173,7 @@ export default function Home() {
                 <h1 className="text-[32px] mb-4 font-medium">Immer auf dem aktuellsten Stand bleiben</h1>
                 <div className="hr w-2/12"></div>
                 <div className="py-16 grid lg:grid-cols-3 grid-cols-1 gap-4">
-                    {articles && articles.slice(0, 3).map((post: any, index4: any) => (
+                    {articles && articles.map((post: any, index4: any) => (
                         <BlogPostCard key={index4}
                             postTitle={post.title}
                             postDesc={post.short_text}

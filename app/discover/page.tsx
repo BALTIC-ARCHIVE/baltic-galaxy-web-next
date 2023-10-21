@@ -32,7 +32,8 @@ export default function Home() {
             var xy = getRandomPosition();
             star.style.top = xy[0] + 'px';
             star.style.left = xy[1] + 'px';
-            document.body.append(star);
+            // @ts-ignore
+            document.getElementById('header').append(star);
         }
     }, []);
 
