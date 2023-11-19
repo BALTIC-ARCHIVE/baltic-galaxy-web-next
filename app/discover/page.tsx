@@ -81,7 +81,7 @@ export default function Home() {
 
             </div>
 
-            <div className="xl:w-3/4 w-4/4 pb-24 px-4 mt-32 grid gap-x-32 gap-y-8 lg:grid-cols-2 grid-cols-1">
+            <div className="xl:w-3/4 w-4/4 pb-24 max-w-[1200px] mx-auto mt-32 grid gap-x-32 gap-y-8 lg:grid-cols-2 grid-cols-1">
                 <div className="my-auto">
                     <h1 className="text-[32px] font-medium">WAS IST BALTIC GALAXY?</h1>
                     <div className="hr w-1/2"></div>
@@ -103,7 +103,8 @@ export default function Home() {
             </div>
 
             <div className=" h-[70vh] bg-cover bg-no-repeat relative bg-bg-kessel  border-r border-white w-full">
-                <svg className="hidden lg:block absolute overflow-hidden right-52 -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className="max-w-[1200px] h-[70vh] relative mx-auto">
+                <svg className="hidden lg:block overflow-hidden absolute -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_763_11670)">
                         <path d="M412.935 50.2057L95.2339 50.2057L95.2339 0.305687L412.935 0.305715L412.935 50.2057Z" fill="black"/>
                         <path d="M94.853 50.2057L176.998 0.330703L12.7078 0.330688L94.853 50.2057Z" fill="black"/>
@@ -115,7 +116,7 @@ export default function Home() {
                         </clipPath>
                     </defs>
                 </svg>
-                <div className="absolute bottom-16 lg:mx-48 mx-4">
+                <div className="absolute bottom-16">
                     <div className="w-3/5">
                         <h1 className="text-[32px] font-medium">WÄHLE DEINEN EIGENEN WEG</h1>
                         <div className="hr w-1/4"></div>
@@ -126,10 +127,12 @@ export default function Home() {
                             - bestimme selbst, wo deine Reise hin gehen soll! </p>
                     </div>
                 </div>
+                </div>
             </div>
 
             <div className=" h-[70vh] bg-cover relative bg-no-repeat bg-bg-endor bg-bottom border-r border-white w-full">
-                <svg className="hidden lg:block absolute overflow-hidden right-52 -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className="max-w-[1200px] h-[70vh] relative  mx-auto">
+                <svg className="hidden lg:block absolute overflow-hidden right-0 -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_763_11670)">
                         <path d="M412.935 50.2057L95.2339 50.2057L95.2339 0.305687L412.935 0.305715L412.935 50.2057Z" fill="black"/>
                         <path d="M94.853 50.2057L176.998 0.330703L12.7078 0.330688L94.853 50.2057Z" fill="black"/>
@@ -141,8 +144,8 @@ export default function Home() {
                         </clipPath>
                     </defs>
                 </svg>
-                <div className="absolute bottom-16 lg:mx-48 mx-4">
-                    <div className="float-right text-end w-3/5">
+                <div className="absolute bottom-16">
+                    <div className="float-right text-end  w-3/5">
                     <h1 className="text-[32px] font-medium">ERKUNDE WELTEN DER GALAXIE</h1>
                     <div className="hr w-1/4 float-right"></div>
                     <p className="mt-8 text-[18px] text-white">
@@ -150,10 +153,12 @@ export default function Home() {
                         Tauche in die tiefen Meere von Mon Cala oder verdiene deine ersten Kredits in den Minen von Kessel, nur um sie später auf Coruscant zu verprassen!  </p>
                     </div>
                 </div>
+                </div>
             </div>
 
             <div className=" h-[70vh] bg-cover bg-no-repeat relative bg-bg-umbara bg-bottom border-r border-white w-full">
-                <svg className="hidden lg:block absolute overflow-hidden left-52 -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className="max-w-[1200px] h-[70vh] relative  mx-auto">
+                <svg className="hidden lg:block absolute overflow-hidden -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_763_11670)">
                         <path d="M412.935 50.2057L95.2339 50.2057L95.2339 0.305687L412.935 0.305715L412.935 50.2057Z" fill="black"/>
                         <path d="M94.853 50.2057L176.998 0.330703L12.7078 0.330688L94.853 50.2057Z" fill="black"/>
@@ -165,7 +170,7 @@ export default function Home() {
                         </clipPath>
                     </defs>
                 </svg>
-                <div className="absolute bottom-16 lg:mx-48 mx-4">
+                <div className="absolute bottom-16">
                     <div className="w-3/5">
                         <h1 className="text-[32px] font-medium">BEZWINGE DUNGEONS</h1>
                         <div className="hr w-1/4"></div>
@@ -175,10 +180,12 @@ export default function Home() {
                             Doch Vorsicht, suche dir jemanden in deiner Größe, ernte Erfahrung und schreite voran!</p>
                     </div>
                 </div>
+                </div>
             </div>
 
             <div className=" h-[70vh] bg-cover bg-no-repeat relative bg-bg-tatooine bg-bottom border-r border-white w-full">
-                <svg className="hidden lg:block absolute overflow-hidden right-52 -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className="max-w-[1200px] h-[70vh] relative  mx-auto">
+                <svg className="hidden lg:block absolute overflow-hidden right-0 -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_763_11670)">
                         <path d="M412.935 50.2057L95.2339 50.2057L95.2339 0.305687L412.935 0.305715L412.935 50.2057Z" fill="black"/>
                         <path d="M94.853 50.2057L176.998 0.330703L12.7078 0.330688L94.853 50.2057Z" fill="black"/>
@@ -190,7 +197,7 @@ export default function Home() {
                         </clipPath>
                     </defs>
                 </svg>
-                <div className="absolute bottom-16 lg:mx-48 mx-4">
+                <div className="absolute bottom-16">
                     <div className="float-right text-end w-3/5">
                         <h1 className="text-[32px] font-medium">BAUE DIR EINE BASIS</h1>
                         <div className="hr w-1/4 float-right"></div>
@@ -200,10 +207,12 @@ export default function Home() {
                             Dabei kannst du deine Kreativität frei entfalten!</p>
                     </div>
                 </div>
+                </div>
             </div>
 
             <div className=" h-[70vh] bg-cover bg-no-repeat relative bg-bg-hoth bg-bottom border-r border-white w-full">
-                <svg className="hidden lg:block absolute left-52 -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className="max-w-[1200px] h-[70vh] relative  mx-auto">
+                <svg className="hidden lg:block absolute  -top-[1px]" width="508" height="51" viewBox="0 0 508 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_763_11670)">
                         <path d="M412.935 50.2057L95.2339 50.2057L95.2339 0.305687L412.935 0.305715L412.935 50.2057Z" fill="black"/>
                         <path d="M94.853 50.2057L176.998 0.330703L12.7078 0.330688L94.853 50.2057Z" fill="black"/>
@@ -215,7 +224,7 @@ export default function Home() {
                         </clipPath>
                     </defs>
                 </svg>
-                <div className="absolute bottom-16 lg:mx-48 mx-4">
+                <div className="absolute bottom-16">
                     <div className="w-3/5">
                         <h1 className="text-[32px] font-medium">GRÜNDE EINE FRAKTION</h1>
                         <div className="hr w-1/4"></div>
@@ -226,10 +235,12 @@ export default function Home() {
                             rekrutiere Verbündete und erobere die Galaxis!</p>
                     </div>
                 </div>
+                </div>
             </div>
 
-            <div className="header w-full h-[70vh] bg-bg-snow bg-top bg-no-repeat bg-cover px-4 xl:px-0 justify-center items-center"><h1
-                className="text-[40px] xl:text-[52px] text-center font-bold mt-10">TRETE DER COMMUNITY BEI</h1>
+            <div className="header w-full h-[70vh] bg-bg-snow bg-top bg-no-repeat bg-cover px-4 xl:px-0 justify-center items-center">
+                <div className="max-w-[1200px] mx-auto">
+                <h1 className="text-[40px] xl:text-[52px] text-center font-bold mt-10">TRETE DER COMMUNITY BEI</h1>
                 <div className="hr-blue w-1/4 text-center mx-auto"></div>
                 <h4 className="text-[16px] xl:text-[18px] mt-12 w-2/3 mx-auto font-normal text-center">
                     Du liebst Star Wars, MMO´s oder Minecraft genau so wie wir?
@@ -238,6 +249,7 @@ export default function Home() {
                 <div className="flex justify-center mt-12 relative z-50"><a
                     className="px-8 py-4 rounded-md bg-[#5865F2] text-white/80 hover:bg-[#5865F2]/90 border-[#7E89B1] text-sm font-medium mr-5"
                     href="https://discord.gg/6UKwkjgU5e">DISCORD BEITRETEN</a></div>
+                </div>
             </div>
         </main>
     )

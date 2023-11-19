@@ -51,13 +51,13 @@ export default function DiscordOnlineCount() {
         menu.classList.toggle("hidden");
     }
     return (
-            <div className="hidden xl:flex min-w-52 float-right px-6 py-4 rounded-lg border-gray-700 items-center border z-50 space-x-5">
+            <div className="hidden xl:block float-right px-8 py-3 rounded-lg border-gray-700 items-center border z-50 space-x-5">
                 <a className="flex hover:text-gray-200" href={(loading ? 0: discordShort.instant_invite)}>
                     <Image width={30} height={30} alt="lol" src="/assets/images/icons/discord-mark-white.svg"
-                           className="h-8 w-8"/>
-                    <span className="ml-2 mt-1">{pageload ?
-                        <Image width={32} height={32} alt="lol" src="/assets/images/icons/spinner/loading-1.svg"
-                                 className="h-8 -mt-1 inline-block w-4"/>: <><b>{discordShort.presence_count}</b></>} Spieler online</span>
+                           className="h-8 mt-1 w-8 mr-4"/>
+                    <span className="ml-2 -mt-1">{pageload ?
+                        <><span className="-mt-4 text-[11px] text-white/70">Discord beitreten</span><br/><b><Image width={32} height={32} alt="lol" src="/assets/images/icons/spinner/loading-1.svg"
+                                                                                                                   className="h-8 -mt-1 inline-block w-4"/> USER</b></>: <><span className="mt-1 text-[11px] flex text-white/70">Discord beitreten</span><b className="flex-nowrap">{discordShort.presence_count} USER</b></>} ONLINE</span>
                 </a>
 
             </div>

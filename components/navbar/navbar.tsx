@@ -20,8 +20,9 @@ export default function Navbar() {
     return (
         <nav
             className="hidden relative xl:block z-50 bg-gradient-radial-bottom bg-no-repeat bg-[left_top_0rem] from-[#566fcc]/25 via-[#010203]/100 to-[#010203]">
-            <div className="px-[20px] flex justify-between h-20 bg-transparent text-white">
-                <div className="px-5 xl:px-40 py-6 absolute  w-full">
+            <div className="max-w-[1200px] relative mx-auto">
+            <div className="flex justify-between h-20 bg-transparent text-white">
+                <div className="py-6 absolute w-full">
                     <div className="hidden xl:flex items-center z-50 space-x-5">
                         <a className="flex hover:text-gray-200" href="https://www.tiktok.com/@balticgalaxy">
                             <Image width={25} height={25} alt="lol" src="/assets/images/tiktok.svg"
@@ -54,6 +55,7 @@ export default function Navbar() {
                     </ul>
                 </div>
             </div>
+            </div>
             <div className="flex justify-between border-[#303545] border-b">
                 <div className="mx-auto max-w-7xl">
                     <div className="relative flex h-10 items-center justify-between">
@@ -65,21 +67,20 @@ export default function Navbar() {
                                    className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">ENTDECKEN <span className="px-[6px] py-[3px] h-1 bg-red-600 font-bold text-[10px] rounded">NEU</span></Link>
 
                                 <Link href="/blog" className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">BLOG</Link>
-                                <Link href="https://baltic-studios.de/apply" className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">BEWERBEN</Link>
 
-{/*                                <a href="#"
-                                   className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">FRAKTIONEN</a>
+                              <a
+                                   className="text-gray-500 cursor-not-allowed px-3 py-2 nav-link rounded-md text-sm font-medium">FRAKTIONEN</a>
 
-                                <a href="#"
-                                   className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">SPIELERPORTAL</a>
+                                <a
+                                   className="text-gray-500 cursor-not-allowed  px-3 py-2 nav-link rounded-md text-sm font-medium">SPIELERPORTAL</a>
 
-                                <a href="#"
-                                   className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">WIKI</a>
+                                <a
+                                   className="text-gray-500 cursor-not-allowed  px-3 py-2 nav-link rounded-md text-sm font-medium">WIKI</a>
 
-                                <a href="#"
-                                   className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">
+                                <a
+                                   className="text-gray-500 cursor-not-allowed  px-3 py-2 nav-link rounded-md text-sm font-medium">
                                     MEDIATHEK
-                                </a>*/}
+                                </a>
                             </div>
                         </div>
                     </div>

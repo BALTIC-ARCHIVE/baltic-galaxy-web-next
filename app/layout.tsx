@@ -32,9 +32,9 @@ export default function RootLayout({children,}: {
 
         <footer>
         <div
-            className="bg-gradient-radial-top overflow-hidden bg-no-repeat p-10 xl:p-16 pb-36 h-footer origin-top to-[#010203]/30 via-[#566fcc]/10 via-[#566fcc]/10 from-[#566fcc]/20 border-[#303545] border-t">
+            className="bg-gradient-radial-top overflow-hidden bg-no-repeat p-10  xl:p-16 pb-36 h-footer origin-top to-[#010203]/30 via-[#566fcc]/10 via-[#566fcc]/10 from-[#566fcc]/20 border-[#303545] border-t">
 
-            <div className="grid xl:grid-cols-4 grid-cols-2 mx-auto gap-x-4 w-4/5 justify-items-center pt-10 py-38">
+            <div className="grid xl:grid-cols-4 grid-cols-2 mx-auto gap-x-4 max-w-[1200px] justify-items-center pt-10 py-38">
                 <div className="h-fit">
                     <Image width={200} height={100} alt="lol" src="/assets/logo.png"/>
                     <p className="text-gray-600 text-sm mt-3">Dieses Projekt steht in keiner Verbindung mit Disney® und
@@ -92,14 +92,14 @@ export default function RootLayout({children,}: {
         </div>
 
 
-                <div className=" hidden lg:block py-4 px-10 mx-auto w-4/5 rounded-lg shadow bg-black">
-                    <div className="grid grid-cols-3 p-5">
+                <div className=" hidden lg:block py-4 max-w-[1200px] mx-auto rounded-lg shadow bg-black">
+                    <div className="grid grid-cols-4 py-5">
                         <div>
                             <a href="/">
                             <Image width={200} height={100} alt="lol" src="/assets/logo-studios.webp"/>
                             </a>
                         </div>
-                        <div className="h-fit w-full">
+                        <div className="h-fit col-span-2">
                             <p className="xl:text-xl mt-1 text-[12px] text-gray-300">
                                 Ein Universum voller Ideen
                             </p>
@@ -116,11 +116,11 @@ export default function RootLayout({children,}: {
                                         Impressum
                                     </a>
                                 </li>
-                                <li className="inline mx-5">
+{/*                                <li className="inline mx-5">
                                     <a href="https://baltic-studios.de/credits" className="hover:text-gray-400 text-gray-500 hover:cursor-pointer">
                                         Credits
                                     </a>
-                                </li>
+                                </li>*/}
                             </ul>
                         </div>
                     </div>

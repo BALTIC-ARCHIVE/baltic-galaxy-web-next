@@ -105,28 +105,28 @@ export default function Home() {
     }
 
     return (
-        <main className="flex justify-center min-h-screen overflow-x-hidden flex-col items-center justify-between">
+        <main className="flex justify-center mx-auto  min-h-screen overflow-x-hidden flex-col items-center justify-between">
             <div className=" lg:h-[70vh] h-[60vh] bg-cover bg-no-repeat relative bg-bg-hoth bg-bottom border-r border-white w-full ">
-                <div className="absolute lg:bottom-48 bottom-16 mx-4 lg:mx-48">
-                    <div className="lg:w-4/6 w-6/6 px-4">
+                <div className="mt-24 max-w-[1200px] mx-auto">
+                    <div className="lg:w-5/6 w-6/6">
             <a href="https://baltic-studios.de/apply"
-                className="xl:px-[20px] px-2 py-[7px] h-1 text-bal-yellow-darker bg-black/10 font-bold border border-white/20 lg:text-[14px] text-[12px] rounded-full group hover:cursor-pointer">Wir suchen Verstärkung - Jetzt bewerben
+                className="xl:px-[20px] py-[7px] h-1 text-bal-yellow-darker bg-black/10 font-bold border border-white/20 lg:text-[14px] text-[12px] rounded-full group hover:cursor-pointer">Wir suchen Verstärkung - Jetzt bewerben
                 <Image
                 height={20} width={20} alt="alt"
                 className="inline transition-all ease-in-out group-hover:ml-3 ml-2 h-4 w-4"
                 src="/assets/images/icons/arrow_right_yellow.svg"/></a>
-                        <h1 className=" mt-5 lg:text-[52px] text-[25px] font-medium">TAUCHE EIN IN EIN STAR WARS ABENTEUER</h1>
+                        <h1 className=" mt-5 lg:text-[52px] text-[25px] lg:w-5/6 w-6/6 font-medium">TAUCHE EIN IN EIN STAR WARS ABENTEUER</h1>
                         <div className="hr w-2/4"></div>
-                        <p className="mt-10 mb-10 text-[18px] text-white">
+                        <p className="mt-10 mb-10 lg:w-4/6 text-[18px] text-white">
                             Trete dem Imperium oder der Neuen Republik bei und kämpfe in Schlachten um ganze Flotten in
                             vorderster Front! </p>
 
                         <a
-                            className="lg:px-8 lg:py-4 px-4 py-2 rounded-md bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium mr-5"
+                            className="lg:px-8 flex-nowrap lg:py-4 px-4 py-2 rounded-md bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium mr-5"
                             href="https://discord.gg/6UKwkjgU5e">DISCORD BEITRETEN</a>
                         <div id="tooltip" className="lg:inline hidden relative">
                             <a onClick={handleClick}
-                               className="lg:px-8 lg:py-4 px-4 py-2 hidden lg:inline rounded-md hover:cursor-pointer bg-black text-white/80 border-2  hover:bg-black/70 border-[#7E89B1]/70 text-sm font-medium mr-5"
+                               className="lg:px-8 lg:py-4 px-4 py-2 hidden lg:inline flex-nowrap rounded-md hover:cursor-pointer bg-black text-white/80 border-2  hover:bg-black/70 border-[#7E89B1]/70 text-sm font-medium mr-5"
                             >SERVERADRESSE KOPIEREN</a>
                             <div className='tooltip p-1  left-16 rounded bg-black'>Adresse kopiert!</div>
                         </div>
@@ -134,11 +134,11 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="xl:w-3/4 w-full bg-black px-8 pb-16 mt-8 grid  lg:gap-x-22 lg:grid-cols-2 grid-cols-1">
+            <div className="xl:w-3/4 w-full bg-black pb-16 mt-8 grid max-w-[1200px] mx-auto lg:gap-x-22 lg:grid-cols-2 grid-cols-1">
                 <div className="my-auto lg:w-4/6 w-full">
                     <h1 className="text-[32px] font-medium">WAS IST BALTIC GALAXY?</h1>
                     <div className="hr w-1/2"></div>
-                    <p className="mt-8 mb-8 text-[18px] text-white">Wir setzen mit Minecraft neue Maßstäbe, in einer weit, weit entfernten Galaxis! <br/><br/>
+                    <p className="mt-8 mb-8 text-[18px] text-gray-400">
 
                         Durchquere eine Vielzahl von spannenden Quests, erbaue deine Heimat, erobere Schlachtschiffe mit deiner Fratkion und mache dir einen Namen. Alles begleitet von talentierten Synchronsprecher/innen und hauseigenen Soundtracks! Lust auf ein unvergessliches Abenteuer? Dann los! </p>
                     <a
@@ -150,7 +150,7 @@ export default function Home() {
             </div>
 
 
-            <div className="xl:w-3/4 w-full bg-black pb-16 mt-8 px-8 grid  gap-x-12 lg:grid-cols-2 grid-cols-1">
+            <div className="xl:w-3/4 w-full bg-black pb-16 mt-8 max-w-[1200px] mx-auto grid  gap-x-12 lg:grid-cols-2 grid-cols-1">
                 <div className="my-auto float-left">
                     <Image
                         height={2000} width={2000} alt="alt"
@@ -160,7 +160,7 @@ export default function Home() {
                 <div className="my-auto ">
                     <h1 className="text-[32px] font-medium">TRAGE UNS JETZT IN DEINE SERVERLISTE EIN!</h1>
                     <div className="hr w-1/2"></div>
-                    <p className="mt-8 mb-8 text-[18px] text-white">Tauche direkt in dein Abenteuer! Trotz unserer einzigartigen Systeme, benötigst du keine Mods. Alles weitere wird dir auf dem Server mit interaktiven Geschichten erzählt.</p>
+                    <p className="mt-8 mb-8 text-[18px] text-gray-400">Tauche direkt in dein Abenteuer! Trotz unserer einzigartigen Systeme, benötigst du keine Mods. Alles weitere wird dir auf dem Server mit interaktiven Geschichten erzählt.</p>
                     <div id="tooltip2" className="lg:inline hidden relative">
                         <a onClick={handleClick2}
                             className="px-8 py-4 rounded-md bg-bal-yellow-darker text-black/80 hover:bg-bal-yellow border-[#7E89B1] text-sm font-medium mr-5">SERVER ADRESSE KOPIEREN</a>
@@ -169,7 +169,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="xl:w-3/4 w-full px-8 mt-8">
+            <div className="xl:w-3/4 w-full max-w-[1200px] mx-auto mt-8">
                 <h1 className="text-[32px] mb-4 font-medium">Immer auf dem aktuellsten Stand bleiben</h1>
                 <div className="hr w-2/12"></div>
                 <div className="py-16 grid lg:grid-cols-3 grid-cols-1 gap-4">
@@ -184,7 +184,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="mt-20 xl:mt-40 xl:w-3/4 w-5/6 py-8 mx-auto grid grid-cols-1 xl:grid-cols-2">
+            <div className="mt-20 xl:mt-40 max-w-[1200px] mx-auto py-8 mx-auto grid grid-cols-1 xl:grid-cols-2">
                 <div className="mb-8">
 
                     <div className="mb-8">
@@ -209,13 +209,14 @@ export default function Home() {
                 <AudioListGroup />
             </div>
 
-            <div className="heading relative h-[75vh] mb-36 lg:h-[65vh] xl:w-2/4 w-5/6">
+            <div className="heading relative h-[75vh] mb-36 lg:h-[65vh] max-w-[1200px] mx-auto">
                 <h4 className="mt-32 text-gradient-blue text-[18px] xl:mt-52 text-center">JETZT TEIL DES TEAMS WERDEN!</h4>
                 <h1 className="text-[35px] xl:text-[52px] font-medium mt-0 text-center">ENTFALTE DEINE KREATIVITÄT FÜR AUFREGENDE PROJEKTE</h1>
-                <p className="text-[15px] xl:text-[18px] mt-4 font-normal text-gray-400 text-center">Woher stammst du? Was führt dich hierher? Wie ist überhaupt dein Name?! Ob Anführer einer neuen Revolution oder einfacher Kopfgeldjäger - bestimme selbst, wo deine Reise hin gehen soll!
+                <p className="text-[15px] xl:text-[18px] mt-4 font-normal text-gray-400 text-center">
+                    Seit nun mehreren Jahren arbeiten wir als talentiertes Team daran, dir eine unvergessliche Zeit zu erschaffen. Wir schreiben, denken, entwickeln, designen, bauen, komponieren, modellieren und investieren all unsere Leidenschaft in unseren aktuellen, sowie zukünftigen Projekten. Du möchtest ein Teil davon sein? Dann nichts wie ab!
                 </p>
 
-                <div className="flex mt-8 relative z-50 mx-auto xl:w-3/4 w-full">
+                <div className="flex mt-8 relative z-50 mx-auto xl:w-4/4 w-full">
                     <div className="mx-auto">
                     {team && team.map((member: any, index: any) => (
                         <TeamHead  key={index} username={member.username} rank={member.rank_name} bio={member.bio} twitter={member.twitter_handle} />
@@ -232,6 +233,20 @@ export default function Home() {
                        className=" lg:px-8 lg:py-4 px-4 py-2 rounded-md bg-black text-white/80 border-2 mx-auto my-auto hover:bg-white/5 border-[#7E89B1]/70 text-sm font-medium">TEAM KENNENLERNEN</a>
                     </div>
                     </div>
+            </div>
+
+            <div className="header w-full h-[70vh] bg-bg-snow bg-top bg-no-repeat bg-cover px-4 xl:px-0 justify-center items-center">
+                <div className="max-w-[1200px] mx-auto">
+                    <h1 className="text-[40px] xl:text-[52px] text-center font-bold mt-10">TRETE DER COMMUNITY BEI</h1>
+                    <div className="hr-blue w-1/4 text-center mx-auto"></div>
+                    <h4 className="text-[16px] xl:text-[18px] mt-12 w-2/3 mx-auto font-normal text-center">
+                        Du liebst Star Wars, MMO´s oder Minecraft genau so wie wir?
+                        Dann wirst du dich wie Zuhause fühlen! Werde ein Teil unserer großartigen Community.
+                    </h4>
+                    <div className="flex justify-center mt-12 relative z-50"><a
+                        className="px-8 py-4 rounded-md bg-[#5865F2] text-white/80 hover:bg-[#5865F2]/90 border-[#7E89B1] text-sm font-medium mr-5"
+                        href="https://discord.gg/6UKwkjgU5e">DISCORD BEITRETEN</a></div>
+                </div>
             </div>
 
         </main>

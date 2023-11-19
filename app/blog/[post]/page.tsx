@@ -62,9 +62,9 @@ export default function Home({params}: { params: { post: string } }) {
                         height={1080}
                         className="lg:h-[80vh] h-[40vh] w-full"
                     />
-                    <div className="z-20 px-4">
-                        <h1 className="xl:text-5xl text-3xl font-bold mb-4 z-20 leading-normal absolute bottom-20 left-0 xl:px-20 px-4">{singlePost.title}</h1>
-                        <div className="xl:px-20 h-20 z-20 w-full absolute bottom-0">
+                    <div className="z-20 max-w-[1200px] relative mx-auto">
+                        <h1 className="xl:text-5xl text-3xl font-bold mb-4 z-20 leading-normal absolute bottom-20 left-0">{singlePost.title}</h1>
+                        <div className=" h-20 z-20 w-full absolute bottom-0">
                             <div className="xl:float-right float-left mb-4">
                                 <span className="text-gray-600">{timeConverter(Date.parse(singlePost.created_at))}</span>
                             </div>
@@ -82,7 +82,7 @@ export default function Home({params}: { params: { post: string } }) {
                     </div>
                 </div>
 
-                <div className="px-2 lg:px-52 ">
+                <div className="max-w-[1200px] relative mx-auto px-2 ">
 
                     <div className="xl:mx-28 p-2 pt-20 mb-48 text-white">
                         <div className="text-white text-xl lg:text-2xl"  dangerouslySetInnerHTML={{__html: cleanText}}/>
@@ -91,7 +91,7 @@ export default function Home({params}: { params: { post: string } }) {
 
             </div>
 
-            <div className="mt-5 py-20 px-4 lg:px-40 grid lg:grid-cols-3 grid-cols-1 gap-4">
+            <div className="mt-5 py-20 max-w-[1200px] relative mx-auto grid lg:grid-cols-3 grid-cols-1 gap-4">
                 {allPosts.slice(0,3).map((post: any, index: any) => (
                     <BlogPostCard
                         key={index}
