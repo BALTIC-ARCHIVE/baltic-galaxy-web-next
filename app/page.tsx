@@ -169,7 +169,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="xl:w-3/4 w-full max-w-[1200px] mx-auto mt-8">
+{/*            <div className="xl:w-3/4 w-full max-w-[1200px] mx-auto mt-8">
                 <h1 className="text-[32px] mb-4 font-medium">Immer auf dem aktuellsten Stand bleiben</h1>
                 <div className="hr w-2/12"></div>
                 <div className="py-16 grid lg:grid-cols-3 grid-cols-1 gap-4">
@@ -182,7 +182,7 @@ export default function Home() {
                         />
                         ))}
                 </div>
-            </div>
+            </div>*/}
 
             <div className="mt-20 xl:mt-40 max-w-[1200px] mx-auto py-8 mx-auto grid grid-cols-1 xl:grid-cols-2">
                 <div className="mb-8">

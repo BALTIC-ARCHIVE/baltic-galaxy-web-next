@@ -66,7 +66,7 @@ export default function Navbar() {
                                 <Link href="/discover"
                                    className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">ENTDECKEN <span className="px-[6px] py-[3px] h-1 bg-red-600 font-bold text-[10px] rounded">NEU</span></Link>
 
-                                <Link href="/blog" className="text-white px-3 py-2 nav-link rounded-md text-sm font-medium">BLOG</Link>
+                                <a className="text-gray-500 cursor-not-allowed px-3 py-2 nav-link rounded-md text-sm font-medium">BLOG</a>
 
                               <a
                                    className="text-gray-500 cursor-not-allowed px-3 py-2 nav-link rounded-md text-sm font-medium">FRAKTIONEN</a>

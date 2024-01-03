@@ -9,6 +9,7 @@ export default function BlogPage() {
     const [articles, setArticles] = useState([] as any)
     const [singleArticle, setSingleArticle] = useState({} as any)
     let newestArticle: any;
+    let blogDeactivated: boolean = true;
     const {loading, error, data, refetch} = useFetch({
         url: "https://plexus.baltic-galaxy.de/api/articles",
         method: "get",
@@ -36,6 +37,15 @@ export default function BlogPage() {
         }
 
     }, [data, singleArt])
+
+    if (blogDeactivated) {
+        return  <main className="flex relative min-h-screen mb-20 flex-col overflow-visible items-center justify-between">
+            <div className="heading xl:w-3/4 w-5/6">
+                <h4 className="mt-32 xl:mt-52">Wartungsarbeiten</h4>
+                <h1 className="text-[35px] xl:text-[35px] font-bold mt-0">Der Blog ist derzeit deaktiviert.</h1>
+            </div>
+        </main>
+    }
 
     if (loading) {
         return <p>Loading...</p>;
