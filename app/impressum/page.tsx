@@ -29,12 +29,12 @@ export default function ImpressumPage() {
             <div className="xl:w-3/4 w-5/6">
                 <h1 className="text-2xl mb-3 font-bold mt-10">Kontakt:</h1>
                 <h3 className="text-gray-300 mb-1"><b>Telefon:</b>  015770174294</h3>
-                <h3 className="text-gray-300 mb-1"><b>E-Mail:</b> john@baltic-studios.de</h3>
+                <h3 className="text-gray-300 mb-1"><b>E-Mail:</b> kontakt@baltic-studios.de</h3>
             </div>
 
             <div className="xl:w-3/4 w-5/6">
                 <h1 className="text-2xl mb-3 font-bold mt-10">Verantwortlich für den Inhalt:</h1>
-                <h3 className="text-gray-300 mb-1">Siehe oben</h3>
+                <h3 className="text-gray-300 mb-1">John-Phillip Delenschke</h3>
             </div>
 
             <div className="xl:w-3/4 w-5/6">
