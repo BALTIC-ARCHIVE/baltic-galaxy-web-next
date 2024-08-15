@@ -107,12 +107,12 @@ export default function RootLayout({children,}: {
                         <div>
                             <ul className="mt-2 list-disc">
                                 <li className="inline mx-5">
-                                    <a href="https://baltic-studios.de/datenschutz" className="hover:text-gray-400 text-gray-500 hover:cursor-pointer">
+                                    <a href="https://www.baltic-studios.net/de/privacy" className="hover:text-gray-400 text-gray-500 hover:cursor-pointer">
                                         Datenschutz
                                     </a>
                                 </li>
                                 <li className="inline mx-5">
-                                    <a href="https://baltic-studios.de/impressum" className="hover:text-gray-400 text-gray-500 hover:cursor-pointer">
+                                    <a href="https://www.baltic-studios.net/de/imprint" className="hover:text-gray-400 text-gray-500 hover:cursor-pointer">
                                         Impressum
                                     </a>
                                 </li>
